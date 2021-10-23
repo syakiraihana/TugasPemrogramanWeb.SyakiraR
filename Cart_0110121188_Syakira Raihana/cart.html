@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+
+<body style="
+        margin: 0; 
+        padding: 0; 
+        border: 1px solid black">
+    
+    <header>
+        <!--navigasi-->
+        <nav style="
+                font-family: sans-serif;
+                display: flex; 
+                align-items: center; 
+                padding: 10px; 
+                border-bottom: 1px solid black; 
+                background-color: grey">
+            <ul>
+                <li style="list-style: square;"><b>Site Name</b></li>
+            </ul>
+
+            <ul style="
+                    list-style-type:none; 
+                    gap: 10px; 
+                    display: flex; 
+                    align-items: center">
+                <li><a style="text-decoration: none;" href="">Category 1</a> |</li>
+                <li><a style="text-decoration: none;" href="">Category 2</a> |</li>
+                <li><a style="text-decoration: none;" href="">Category 3</a></li>
+            </ul>
+        
+            <ul style="
+                    list-style-type: none;
+                    display: flex;
+                    margin-left: auto;
+                    gap: 20px;
+                    text-decoration: none;
+                    align-items: center">
+                <li>
+                    <a href="">
+                    <img width="20" src="search.png" alt=""/>
+                    </a>
+                </li>
+
+                <li style="display: flex; align-items: center; gap: 28px;">
+                    <a href=""><img width="20" src="troli.png" alt="" /></a>
+                    <a style="text-decoration: none"><h3>Cart (1)</h3></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div style="display: flex; gap: 20px; margin-top: 100px; padding: 10px">
+
+        <!--tampilan checkout kiri-->
+    <main style="width: 65%; align-items: center; gap: 10px">
+        <div style="display: flex; align-items: center; gap: 10px">
+
+            <div style="font-family: sans-serif;">
+              <h2 style="margin: 0">Your Cart</h2>
+            </div>
+        </div>
+
+        <table style="width: 100%; border-collapse: collapse; font-family: sans-serif;">
+            <thead>
+                <tr>
+                    <td style="
+                    border-top: solid 1px black;
+                    border-bottom: 1px solid black">Item
+                    </td>
+            
+                    <td style="
+                    border-top: solid 1px black;
+                    border-bottom: 1px solid black">Price
+                    </td>
+            
+                    <td style="
+                    border-top: solid 1px black;
+                    border-bottom: 1px solid black">Quantity
+                    </td>
+                </tr>
+            </thead>
+
+            <tbody style="font-family: sans-serif;">
+                <tr>
+                    <td style="display: flex; align-items: center">
+                    <img width="100" src="blank.png" alt=""/>
+
+                    <p>
+                        T-shirt 
+                    <br>
+                        Size: Small
+                    </p>
+                    </td>
+            
+                    <td><b>$20.00</b></td>
+                
+                    <td>
+                        <select name="jumlah" id="jumlah">
+                            <option value="jumlah">1</option>
+                            <option value="jumlah">2</option>
+                            <option value="jumlah">3</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+
+            <tfoot style="font-family: sans-serif;">
+                <tr>
+                    <td style="
+                    border-top: solid 1px black;
+                    border-bottom: 1px solid black;
+                    text-align: right"
+                    colspan="3">Subtotal: <b>$20.00</b>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <aside style="width: 25%; background-color: grey; padding: 10px; display: grid; align-items: center">
+
+        <!--isi bagian kanan-->
+
+        <h2 style="margin: 0; font-family: sans-serif;">Summary ( 1 item )</h2>
+        <table style="border-collapse: collapse; font-family: sans-serif;">
+            <tr>
+                <td>Subtotal</td>
+                <td style="text-align: right">$20.00</td>
+            </tr>
+
+             <tr>
+                <td>Shipping</td>
+                <td style="text-align: right">-</td>
+            </tr>
+  
+            <tr>
+                <td>Est. Taxes</td>
+                <td style="text-align: right">-</td>
+            </tr>
+  
+            <tr style="width: 100%; border-collapse: collapse">
+                <td style="padding: 15px 0; border-top: solid 1px white"><b>Total</b></td>
+                <td style="
+                    text-align: right;
+                    border-top: solid 1px white"><b>$20.00</b>
+                </td>
+            </tr>
+        </table>
+
+        <a href="checkout.html">
+            <button style="
+            display: flex;
+            justify-content: center;
+            background-color: blue;
+            width: 100%;
+            text-decoration: none;
+            padding: 10px 0"
+            >Checkout
+            </button>
+        </a>
+
+    </aside>
+</div>
+
+<!--footer-->
+<footer style="margin-top: 100px; border-top: 1px solid black; padding: 10px; display: grid; gap: 20px">
+
+    <div style="display: flex; justify-content: space-between">
+        <div style="text-decoration: none; gap: 50px">
+            <a style="padding: 20px; font-family: sans-serif;"><b>Site Name</b></a>
+            <a style="text-decoration: underline; font-family: sans-serif;" href="">Category X</a> |
+            <a style="text-decoration: underline; font-family: sans-serif;" href="">Category Y</a> |
+            <a style="text-decoration: underline; font-family: sans-serif;" href="">Category Z</a>
+        </div>
+
+        <div style ="display: flex; margin-left: auto">
+            <a style="text-decoration: none; font-family: sans-serif;"><b>Stay In Touch! Join Our Newsletter</b></a>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: space-between">
+    
+        <div style="display: flex; justify-content: center">
+            <img width="25" src="bni.png" alt=""/>
+            <img width="25" src="mandiri.png" alt=""/>
+            <img width="25" src="bca.png" alt=""/>
+        </div>
+
+        <div style="display: flex; background-size: 20px; align-items: center">
+            <input
+            type="text"
+            placeholder="Enter Email"
+            style="font-weight: bolder; border-color: black;"/>
+            <button style="background-color: rgb(94, 90, 86); background-size: 40px">Subscribe</button>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
